@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const links = [
   { href: "https://twitter.com/HalilAtilla10", label: "Twitter" },
@@ -12,8 +13,17 @@ const links = [
   return link;
 });
 
-const Nav = () => (
+const Nav = ({ goHome }) => (
   <nav>
+    {goHome ? (
+      <Link href="/">
+        <a className="social-links"> {goHome} </a>
+      </Link>
+    ) : (
+      <Link href="/movies">
+        <a className="social-links"> My Movies </a>
+      </Link>
+    )}
     <ul>
       {links.map(({ key, href, label }) => (
         <li key={key}>

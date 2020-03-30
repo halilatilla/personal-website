@@ -20,7 +20,7 @@ const MainPage = () => {
           <br />
           <Typist.Delay ms={500} />
           <b>
-            Halil Atilla 🧔
+            Halil Atilla 🧔🏻
             <br />
             <Typist.Delay ms={500} />
             <span> Just A Curious 🔍</span>
