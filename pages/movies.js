@@ -15,13 +15,13 @@ const MovieList = ({ movies }) => {
                   <p className="movie-name"> {localMovie.movieName}</p>
                   <p className="movie-date"> {localMovie.movieDate.split("-")[0]}</p>
 
-                  <div className="movie-image-wrapper">
+                  <a target="_black" href={localMovie.movieUrl} className="movie-image-wrapper">
                     <img
                       src={localMovie.movieImgUrl}
                       alt=""
                       className="movie-image"
                     />
-                  </div>
+                  </a>
 
                   <p className="movie-description"> {localMovie.movieDescription}</p>
                 </div>
