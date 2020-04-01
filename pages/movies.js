@@ -23,7 +23,7 @@ const MovieList = ({ movies }) => {
                     />
                   </div>
 
-                  <p> {localMovie.movieDescription}</p>
+                  <p className="movie-description"> {localMovie.movieDescription}</p>
                 </div>
               </div>
             );
@@ -60,7 +60,6 @@ const MovieList = ({ movies }) => {
           grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
           grid-auto-flow: dense;
           grid-gap: 3rem;
-          max-width: 1180px;
           margin: 0 auto;
           margin-top: 1rem;
           overflow-x: hidden;
@@ -71,7 +70,7 @@ const MovieList = ({ movies }) => {
           display: grid;
           width: 100%;
           box-shadow: 1px 1px 10px #ccc;
-          padding: 9px;
+          border-radius: 5px;
           align-content: space-between;
         }
         .movie-name {
@@ -89,6 +88,7 @@ const MovieList = ({ movies }) => {
         }
         .movie-image {
           width: 100%;
+          height: 100%;
           object-fit: cover;
           object-position: center;
           transition: all 0.4s ease;
@@ -96,12 +96,10 @@ const MovieList = ({ movies }) => {
         .movie-image:hover {
           transform: scale(1.2);
         }
-        .button-container {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          column-gap: 9px;
+    
+        .movie-description{
+          padding: 9px
         }
-
         a {
           color: inherit;
           text-decoration: none;
