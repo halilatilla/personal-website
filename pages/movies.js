@@ -66,6 +66,11 @@ const MovieList = ({ movies }) => {
           padding: 18px 30px;
           color: wheat;
         }
+        @media (max-width: 600px) {
+          .movies-wrapper {
+            padding: 18px
+          }
+        }
         .movie-container {
           display: grid;
           width: 100%;
