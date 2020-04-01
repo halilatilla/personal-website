@@ -13,16 +13,17 @@ const MovieList = ({ movies }) => {
               <div className="movie-container" key={localMovie._id}>
                 <div>
                   <p className="movie-name"> {localMovie.movieName}</p>
+                  <p className="movie-date"> {localMovie.movieDate.split("-")[0]}</p>
 
                   <div className="movie-image-wrapper">
                     <img
-                      src={localMovie.movieImage}
+                      src={localMovie.movieImgUrl}
                       alt=""
                       className="movie-image"
                     />
                   </div>
 
-                  <p> {localMovie.description}</p>
+                  <p> {localMovie.movieDescription}</p>
                 </div>
               </div>
             );
@@ -58,7 +59,7 @@ const MovieList = ({ movies }) => {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
           grid-auto-flow: dense;
-          grid-gap: 2rem;
+          grid-gap: 3rem;
           max-width: 1180px;
           margin: 0 auto;
           margin-top: 1rem;
@@ -76,6 +77,11 @@ const MovieList = ({ movies }) => {
         .movie-name {
           font-size: 1.2rem;
           font-weight: bold;
+          letter-spacing: 1px
+        }
+        .movie-date {
+          font-size: 1.2rem;
+          letter-spacing: 1px
         }
         .movie-image-wrapper {
           overflow: hidden;
@@ -108,9 +114,8 @@ const MovieList = ({ movies }) => {
 };
 
 MovieList.getInitialProps = async () => {
-  const res = await axios.get(`https://strapi-nextjs.herokuapp.com/tests`);
+  const res = await axios.get(`https://mymovies-strapi.herokuapp.com/movies`);
   const movies = await res.data;
-  console.log(movies);
 
   return { movies };
 };

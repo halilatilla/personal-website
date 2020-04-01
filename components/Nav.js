@@ -21,7 +21,7 @@ const Nav = ({ goHome }) => (
       </Link>
     ) : (
       <Link href="/movies">
-        <a className="social-links"> My Movies </a>
+        <a className="social-links">My Movies 🎬 </a>
       </Link>
     )}
     <ul>
