@@ -13,25 +13,21 @@ const MainPage = () => {
     <>
       <div className="hero">
         <Typist startDelay={2000} cursor={{ element: "▍" }}>
-          <span></span>
-          Hi
-          <Typist.Backspace count={4} delay={500} />
-          {welcome}
+          Hi 👋🏻
           <br />
+          <Typist.Delay ms={500} />
+          {welcome}
           <br />
           <Typist.Delay ms={500} />
           <b>
-            Halil Atilla 🧔🏻
-            <br />
+            I'm Halil Atilla 🧔🏻
             <br />
             <Typist.Delay ms={500} />
             <span> Just A Curious 🔍</span>
             <br />
-            <br />
             <Typist.Delay ms={500} />
             <span> Frontend Developer 💻</span>
           </b>
-          <br />
           <br />
         </Typist>
       </div>
@@ -40,6 +36,9 @@ const MainPage = () => {
         .hero {
           padding: 2rem;
           font-size: 6vw;
+        }
+        .margin {
+          margin-top: 30px;
         }
         @media (max-width: 768px) {
           .hero {
