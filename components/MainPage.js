@@ -6,9 +6,9 @@ const MainPage = () => {
   const isNoon = hours > 11 && hours < 18;
   const isEvening = (hours >= 0 && hours <= 4) || (hours >= 18 && hours <= 23);
 
-  let welcome = "Good morning";
-  if (isNoon) welcome = "Good afternoon";
-  else if (isEvening) welcome = "Good evening";
+  let welcome = "Good morning 🌞";
+  if (isNoon) welcome = "Good afternoon ";
+  else if (isEvening) welcome = "Good evening 🧛🏿";
   return (
     <>
       <div className="hero">
@@ -18,16 +18,20 @@ const MainPage = () => {
           <Typist.Backspace count={4} delay={500} />
           {welcome}
           <br />
+          <br />
           <Typist.Delay ms={500} />
           <b>
             Halil Atilla 🧔🏻
             <br />
+            <br />
             <Typist.Delay ms={500} />
             <span> Just A Curious 🔍</span>
+            <br />
             <br />
             <Typist.Delay ms={500} />
             <span> Frontend Developer 💻</span>
           </b>
+          <br />
           <br />
         </Typist>
       </div>
@@ -37,10 +41,10 @@ const MainPage = () => {
           padding: 2rem;
           font-size: 6vw;
         }
-        @media (min-width: 700px) {
+        @media (max-width: 768px) {
           .hero {
-            padding: 3rem;
-            font-size: 5vw;
+            padding: 1rem;
+            font-size: 7vw;
           }
         }
       `}</style>
