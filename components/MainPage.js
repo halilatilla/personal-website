@@ -9,6 +9,7 @@ const MainPage = () => {
   let welcome = "Good morning 🌞";
   if (isNoon) welcome = "Good afternoon ";
   else if (isEvening) welcome = "Good evening 🧛🏿";
+
   return (
     <>
       <div className="hero">
@@ -31,11 +32,10 @@ const MainPage = () => {
           <br />
         </Typist>
       </div>
-
       <style jsx>{`
         .hero {
           padding: 2rem;
-          font-size: 6vw;
+          font-size: 4.5vw;
         }
         .margin {
           margin-top: 30px;
@@ -44,6 +44,7 @@ const MainPage = () => {
           .hero {
             padding: 1rem;
             font-size: 7vw;
+            background-color: yellow;
           }
         }
       `}</style>
