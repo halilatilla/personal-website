@@ -6,14 +6,14 @@ const links = [
   { href: "https://github.com/halilatilla", label: "GitHub" },
   {
     href: "https://www.linkedin.com/in/halil-atilla-838129151/",
-    label: "Linkedin"
-  }
-].map(link => {
+    label: "Linkedin",
+  },
+].map((link) => {
   link.key = `nav-link-${link.href}-${link.label}`;
   return link;
 });
 
-const Nav = ({ goHome }) => (
+const Nav = ({ goHome, loading }) => (
   <nav>
     {goHome ? (
       <Link href="/">
@@ -21,7 +21,11 @@ const Nav = ({ goHome }) => (
       </Link>
     ) : (
       <Link href="/movies">
-        <a className="social-links">My Movies 🎬 </a>
+        {loading ? (
+          <a className="social-links">Loading... </a>
+        ) : (
+          <a className="social-links">My Movies 🎬 </a>
+        )}
       </Link>
     )}
     <ul>

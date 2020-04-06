@@ -1,21 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import Nav from "../components/Nav";
 
 const MovieList = ({ movies }) => {
+  const [loading, setLoading] = useState(true);
   return (
     <>
-      <Nav goHome={"Home"}></Nav>
+      <Nav loading={loading} goHome={"Home"}></Nav>
       <div className="movies-wrapper">
         {movies &&
-          movies.map(localMovie => {
+          movies.map((localMovie) => {
             return (
               <div className="movie-container" key={localMovie._id}>
                 <div>
                   <p className="movie-name"> {localMovie.movieName}</p>
-                  <p className="movie-date"> {localMovie.movieDate.split("-")[0]}</p>
+                  <p className="movie-date">
+                    {" "}
+                    {localMovie.movieDate.split("-")[0]}
+                  </p>
 
-                  <a target="_black" href={localMovie.movieUrl} className="movie-image-wrapper">
+                  <a
+                    target="_black"
+                    href={localMovie.movieUrl}
+                    className="movie-image-wrapper"
+                  >
                     <img
                       src={localMovie.movieImgUrl}
                       alt=""
@@ -23,7 +31,10 @@ const MovieList = ({ movies }) => {
                     />
                   </a>
 
-                  <p className="movie-description"> {localMovie.movieDescription}</p>
+                  <p className="movie-description">
+                    {" "}
+                    {localMovie.movieDescription}
+                  </p>
                 </div>
               </div>
             );
@@ -68,7 +79,7 @@ const MovieList = ({ movies }) => {
         }
         @media (max-width: 600px) {
           .movies-wrapper {
-            padding: 18px
+            padding: 18px;
           }
         }
         .movie-container {
@@ -81,11 +92,11 @@ const MovieList = ({ movies }) => {
         .movie-name {
           font-size: 1.2rem;
           font-weight: bold;
-          letter-spacing: 1px
+          letter-spacing: 1px;
         }
         .movie-date {
           font-size: 1.2rem;
-          letter-spacing: 1px
+          letter-spacing: 1px;
         }
         .movie-image-wrapper {
           overflow: hidden;
@@ -101,9 +112,9 @@ const MovieList = ({ movies }) => {
         .movie-image:hover {
           transform: scale(1.2);
         }
-    
-        .movie-description{
-          padding: 9px
+
+        .movie-description {
+          padding: 9px;
         }
         a {
           color: inherit;

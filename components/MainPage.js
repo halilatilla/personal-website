@@ -44,7 +44,6 @@ const MainPage = () => {
           .hero {
             padding: 1rem;
             font-size: 7vw;
-            background-color: yellow;
           }
         }
       `}</style>
