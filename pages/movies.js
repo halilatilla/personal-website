@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import axios from "axios";
 import Nav from "../components/Nav";
 
 const MovieList = ({ movies }) => {
-  const [loading, setLoading] = useState(true);
   return (
     <>
-      <Nav loading={loading} goHome={"Home"}></Nav>
+      <Nav goHome={"Home"}></Nav>
       <div className="movies-wrapper">
         {movies &&
           movies.map((localMovie) => {
