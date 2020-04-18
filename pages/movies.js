@@ -6,34 +6,25 @@ const MovieList = ({ movies }) => {
   return (
     <>
       <Nav goHome={"Home"}></Nav>
+
       <div className="movies-wrapper">
         {movies &&
-          movies.map((localMovie) => {
+          movies.map((movie) => {
             return (
-              <div className="movie-container" key={localMovie._id}>
+              <div className="movie-container" key={movie._id}>
                 <div>
-                  <p className="movie-name"> {localMovie.movieName}</p>
-                  <p className="movie-date">
-                    {" "}
-                    {localMovie.movieDate.split("-")[0]}
-                  </p>
+                  <p className="movie-name"> {movie.name}</p>
+                  <p className="movie-date">{movie.date.split("-")[0]}</p>
 
                   <a
                     target="_black"
-                    href={localMovie.movieUrl}
+                    href={movie.imdbUrl}
                     className="movie-image-wrapper"
                   >
-                    <img
-                      src={localMovie.movieImgUrl}
-                      alt=""
-                      className="movie-image"
-                    />
+                    <img src={movie.imgUrl} alt="" className="movie-image" />
                   </a>
 
-                  <p className="movie-description">
-                    {" "}
-                    {localMovie.movieDescription}
-                  </p>
+                  <p className="movie-description">{movie.description}</p>
                 </div>
               </div>
             );
