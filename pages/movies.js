@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import "lazysizes";
 import Nav from "../components/Nav";
 
 const MovieList = ({ movies }) => {
@@ -24,7 +25,11 @@ const MovieList = ({ movies }) => {
                     href={movie.imdbUrl}
                     className="movie-image-wrapper"
                   >
-                    <img src={movie.imgUrl} alt="" className="movie-image" />
+                    <img
+                      data-src={movie.imgUrl}
+                      alt={movie.name}
+                      className="movie-image lazyload"
+                    />
                   </a>
 
                   <p className="movie-description">{movie.description}</p>
