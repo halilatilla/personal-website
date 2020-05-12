@@ -129,11 +129,12 @@ const MovieList = ({ movies }) => {
   );
 };
 
-MovieList.getInitialProps = async () => {
-  const res = await axios.get(`https://mymovies-strapi.herokuapp.com/movies`);
+export async function getStaticProps() {
+  const res = await axios.get(process.env.API_URL);
   const movies = await res.data;
-
-  return { movies };
-};
+  return {
+    props: { movies }, // will be passed to the page component as props
+  };
+}
 
 export default MovieList;

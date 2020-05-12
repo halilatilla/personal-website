@@ -19,7 +19,7 @@ const Nav = ({ goHome }) => {
   return (
     <nav>
       {goHome ? (
-        <Link href="/" onClick>
+        <Link href="/">
           <a className="social-links"> {goHome} </a>
         </Link>
       ) : (
