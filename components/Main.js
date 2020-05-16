@@ -1,7 +1,7 @@
 import React from "react";
 import Typist from "react-typist";
 
-const MainPage = () => {
+const Main = () => {
   const hours = new Date().getHours();
   const isNoon = hours > 11 && hours < 18;
   const isEvening = (hours >= 0 && hours <= 4) || (hours >= 18 && hours <= 23);
@@ -64,4 +64,4 @@ const MainPage = () => {
   );
 };
 
-export default MainPage;
+export default Main;

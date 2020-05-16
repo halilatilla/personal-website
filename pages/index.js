@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Nav from "../components/Nav";
-import MainPage from "../components/MainPage";
+import Main from "../components/Main";
 import Footer from "../components/Footer";
 
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
       </Head>
       <Nav />
 
-      <MainPage />
+      <Main />
       <Footer />
       <style jsx>{`
         :global(body) {

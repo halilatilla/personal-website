@@ -1,12 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Filter from "../components/Filter";
 import "lazysizes";
 import Nav from "../components/Nav";
 
-const MovieList = ({ movies }) => {
+const MovieList = ({ allMovies }) => {
+  const [movies, setMovies] = useState([]);
+
+  const setFiler = (e) => {
+    console.log(e.target.value);
+    if (e.target.value === "") {
+      setMovies(allMovies);
+      return;
+    }
+
+    const filteredMovies = allMovies.filter(
+      (movie) => movie.region === e.target.value
+    );
+
+    setMovies(filteredMovies);
+  };
+
+  useEffect(() => {
+    setMovies(allMovies);
+  }, []);
   return (
     <>
       <Nav goHome={"Home"}></Nav>
+      <Filter movies={allMovies} onChange={(e) => setFiler(e)} />
 
       <div className="movies-wrapper">
         {movies &&
@@ -86,6 +107,7 @@ const MovieList = ({ movies }) => {
           box-shadow: 1px 1px 10px #ccc;
           border-radius: 5px;
           align-content: space-between;
+          max-width: 300px;
         }
         .movie-name {
           font-size: 1.2rem;
@@ -131,9 +153,9 @@ const MovieList = ({ movies }) => {
 
 export async function getStaticProps() {
   const res = await axios.get(process.env.API_URL);
-  const movies = await res.data;
+  const allMovies = await res.data;
   return {
-    props: { movies }, // will be passed to the page component as props
+    props: { allMovies }, // will be passed to the page component as props
   };
 }
 
