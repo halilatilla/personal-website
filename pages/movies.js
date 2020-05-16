@@ -87,14 +87,14 @@ const MovieList = ({ allMovies }) => {
         }
         .movies-wrapper {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-          grid-auto-flow: dense;
-          grid-gap: 3rem;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          grid-gap: 1rem;
           margin: 0 auto;
           margin-top: 1rem;
           overflow-x: hidden;
           padding: 18px 30px;
           color: wheat;
+          justify-items: center;
         }
         @media (max-width: 600px) {
           .movies-wrapper {
@@ -108,6 +108,7 @@ const MovieList = ({ allMovies }) => {
           border-radius: 5px;
           align-content: space-between;
           max-width: 300px;
+          margin-top: 2rem;
         }
         .movie-name {
           font-size: 1.2rem;
