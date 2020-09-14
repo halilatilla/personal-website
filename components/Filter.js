@@ -25,6 +25,13 @@ const Filter = ({ onChange, movies }) => {
           margin-top: 30px;
           width: 200px;
           height: 42px;
+          border-radius: 3px;
+          background-color: #4f5458;
+          color: #067df7;
+          outline: none
+        }
+        select:hover{
+          cursor: pointer
         }
       `}</style>
     </>
