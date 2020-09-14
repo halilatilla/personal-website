@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => (
   <footer>
-    <p>atillahalila0@gmail.com</p>
+    <p>atillahalil0@gmail.com</p>
     <style jsx>{`
       footer {
         position: fixed;

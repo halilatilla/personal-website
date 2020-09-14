@@ -63,9 +63,6 @@ const Nav = ({ goHome }) => {
           display: flex;
           justify-content: space-between;
         }
-        nav > ul {
-          padding: 16px;
-        }
         li {
           display: flex;
         }
