@@ -9,11 +9,8 @@ const Home = () => {
     <>
       <Head>
         <title>Halil Atilla</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="icon" type="image/icon" href="/images/favicon.ico" />
       </Head>
       <Nav />
-
       <Main />
       <Footer />
       <style jsx>{`

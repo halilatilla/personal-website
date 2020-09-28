@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Head from "next/head";
 import axios from "axios";
 import Filter from "../components/Filter";
 import "lazysizes";
@@ -26,6 +27,9 @@ const MovieList = ({ allMovies }) => {
   }, []);
   return (
     <>
+      <Head>
+        <title>Halil Atilla || Movies</title>
+      </Head>
       <Nav goHome={"Home"}></Nav>
       <Filter movies={allMovies} onChange={(e) => setFiler(e)} />
 
