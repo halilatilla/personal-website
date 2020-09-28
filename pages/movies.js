@@ -73,16 +73,16 @@ const MovieList = ({ allMovies }) => {
         .create-movie {
           font-size: 30px;
           margin: auto;
-          border: 1px solid #067df7;
+          border: 1px solid #fff;
           padding: 6px 12px;
           border-radius: 3px;
           transition: all 0.3s ease;
-          color: #067df7;
+          color: #fff;
           text-decoration: none;
           letter-spacing: 1px;
         }
         .create-movie:hover {
-          background-color: #067df7;
+          background-color: #fff;
           color: white;
         }
         .movies-wrapper {

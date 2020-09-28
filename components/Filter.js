@@ -27,11 +27,10 @@ const Filter = ({ onChange, movies }) => {
           height: 42px;
           border-radius: 3px;
           background-color: #4f5458;
-          color: #067df7;
-          outline: none
+          color: #fff;
         }
-        select:hover{
-          cursor: pointer
+        select:hover {
+          cursor: pointer;
         }
       `}</style>
     </>

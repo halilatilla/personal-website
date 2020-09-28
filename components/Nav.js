@@ -67,7 +67,7 @@ const Nav = ({ goHome }) => {
           display: flex;
         }
         .social-links {
-          color: #067df7;
+          color: #fff;
           text-decoration: none;
           font-size: 1rem;
           transition: all 0.3s ease;
