@@ -39,7 +39,12 @@ const Nav = ({ goHome }) => {
       <ul>
         {links.map(({ key, href, label }) => (
           <li key={key}>
-            <a className="social-links" href={href} target="_blank">
+            <a
+              className="social-links"
+              href={href}
+              target="_blank"
+              rel="noreferrer"
+            >
               {label}
             </a>
           </li>
