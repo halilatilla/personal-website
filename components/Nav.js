@@ -18,6 +18,9 @@ const Nav = ({ goHome }) => {
 
   return (
     <nav>
+      <a className="skip-to-content-link" href="#contentMain">
+        Skip to content
+      </a>
       {goHome ? (
         <Link href="/">
           <a className="social-links"> {goHome} </a>
@@ -75,8 +78,25 @@ const Nav = ({ goHome }) => {
           border-radius: 3px;
         }
         .social-links:hover {
-          background-color: #067df7;
-          color: white;
+          background-color: wheat;
+          color: #4f5458;
+        }
+
+        .skip-to-content-link {
+          background: wheat;
+          color: #4f5458;
+          left: 50%;
+          padding: 6px;
+          border-radius: 3px;
+          position: absolute;
+          transform: translateY(-200%);
+          opacity: 0;
+          transition: transform 0.3s;
+        }
+
+        .skip-to-content-link:focus {
+          transform: translateY(0%);
+          opacity: 100%;
         }
       `}</style>
     </nav>

@@ -24,6 +24,9 @@ const Home = () => {
           text-align: center;
           position: relative;
         }
+        :global(a) {
+          text-decoration: none;
+        }
       `}</style>
     </>
   );

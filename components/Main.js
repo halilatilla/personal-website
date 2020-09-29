@@ -12,7 +12,7 @@ const Main = () => {
 
   return (
     <>
-      <div className="hero">
+      <main className="hero" id="contentMain">
         <Typist startDelay={2000} cursor={{ element: "▍" }}>
           Hi 👋🏻
           <br />
@@ -31,7 +31,7 @@ const Main = () => {
           </b>
           <br />
         </Typist>
-      </div>
+      </main>
       <style jsx>{`
         .hero {
           padding: 2rem;

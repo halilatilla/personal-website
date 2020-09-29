@@ -16,7 +16,13 @@ const Footer = () => (
       }
       a {
         color: white;
-        padding: 9px;
+        padding: 6px;
+        border-radius: 3px;
+        transition: all 0.3s;
+      }
+      a:hover {
+        background-color: wheat;
+        color: #4f5458;
       }
     `}</style>
   </footer>
