@@ -37,7 +37,7 @@ const MovieList = ({ allMovies }) => {
         {movies &&
           movies.map((movie) => {
             return (
-              <div className="movie-container" key={movie._id}>
+              <div className="movie-container" id="contentMain" key={movie._id}>
                 <div>
                   <p className="movie-name"> {movie.name}</p>
                   <p className="movie-date">
