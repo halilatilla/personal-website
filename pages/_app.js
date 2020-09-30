@@ -6,6 +6,7 @@ import NProgress from "nprogress";
 import "nprogress/nprogress.css";
 import "../styles/global.scss";
 
+NProgress.configure({ showSpinner: false, parent: "#__next" });
 Router.onRouteChangeStart = () => NProgress.start();
 Router.onRouteChangeComplete = () => NProgress.done();
 
