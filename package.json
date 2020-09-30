@@ -8,12 +8,13 @@
     "start": "next start"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.20.0",
     "dotenv": "^8.2.0",
-    "lazysizes": "^5.2.0",
-    "next": "^9.4.0",
+    "lazysizes": "^5.2.2",
+    "next": "^9.5.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-typist": "^2.0.5"
+    "react-typist": "^2.0.5",
+    "sass": "^1.26.11"
   }
 }

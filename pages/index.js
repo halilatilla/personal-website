@@ -13,21 +13,6 @@ const Home = () => {
       <Nav />
       <Main />
       <Footer />
-      <style jsx>{`
-        :global(body) {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-          font-family: "Dank Mono", Tahoma, Geneva, Verdana, sans-serif;
-          background-color: #181a1b;
-          color: wheat;
-          text-align: center;
-          position: relative;
-        }
-        :global(a) {
-          text-decoration: none;
-        }
-      `}</style>
     </>
   );
 };

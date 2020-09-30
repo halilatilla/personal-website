@@ -52,13 +52,6 @@ const Nav = ({ goHome }) => {
       </ul>
 
       <style jsx>{`
-        :global(body) {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-          font-family: "Dank Mono", Tahoma, Geneva, Verdana, sans-serif;
-          background-color: #181a1b;
-        }
         nav {
           text-align: center;
           display: flex;
@@ -90,7 +83,7 @@ const Nav = ({ goHome }) => {
         .skip-to-content-link {
           background: wheat;
           color: #4f5458;
-          left: 50%;
+          left: 18px;
           padding: 6px;
           border-radius: 3px;
           position: absolute;
