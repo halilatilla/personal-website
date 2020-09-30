@@ -1,14 +1,16 @@
+@import "variables.scss";
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Dank Mono", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #181a1b;
-  color: wheat;
+  background-color: $bg-color;
+  color: $c-main;
   text-align: center;
   position: relative;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }

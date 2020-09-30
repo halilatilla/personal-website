@@ -36,6 +36,15 @@ const Nav = ({ goHome }) => {
           )}
         </Link>
       )}
+
+      <a
+        className="my-story social-links"
+        href="https://medium.com/@atillahalil0/son-heves-b%C3%BCk%C3%BCc%C3%BC-fab960fa69d9"
+        target="_blank"
+        rel="noreferrer"
+      >
+        My Story ✍️
+      </a>
       <ul>
         {links.map(({ key, href, label }) => (
           <li key={key}>
@@ -56,7 +65,7 @@ const Nav = ({ goHome }) => {
           text-align: center;
           display: flex;
           align-items: center;
-          justify-content: space-around;
+          justify-content: space-evenly;
           background-color: #4f5458;
         }
 
@@ -95,6 +104,9 @@ const Nav = ({ goHome }) => {
         .skip-to-content-link:focus {
           transform: translateY(0%);
           opacity: 100%;
+        }
+
+        .my-story {
         }
       `}</style>
     </nav>
