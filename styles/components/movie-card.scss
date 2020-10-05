@@ -1,0 +1,40 @@
+.movie-card {
+  display: grid;
+  width: 100%;
+  box-shadow: 1px 1px 10px #ccc;
+  border-radius: 5px;
+  align-content: space-between;
+  max-width: 300px;
+  margin-top: 2rem;
+}
+.movie-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 9px;
+}
+.movie-date {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.region {
+  text-transform: capitalize;
+}
+.movie-image-wrapper {
+  overflow: hidden;
+  cursor: pointer;
+}
+.movie-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.4s ease;
+}
+.movie-image:hover {
+  transform: scale(1.2);
+}
+
+.movie-description {
+  padding: 9px;
+}

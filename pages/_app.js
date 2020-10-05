@@ -4,7 +4,7 @@ import Router from "next/router";
 import NProgress from "nprogress";
 
 import "nprogress/nprogress.css";
-import "../styles/global.scss";
+import "../styles/index.scss";
 
 NProgress.configure({ showSpinner: false, parent: "#__next" });
 Router.onRouteChangeStart = () => NProgress.start();

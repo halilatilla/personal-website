@@ -1,17 +1,16 @@
 import React from "react";
 import Head from "next/head";
-import Nav from "../components/Nav";
-import Main from "../components/Main";
-import Footer from "../components/Footer";
+import { Nav, Typist, Footer } from "../components";
+import SiteConfig from "../site.config";
 
 const Home = () => {
   return (
     <>
       <Head>
-        <title>Halil Atilla</title>
+        <title>{SiteConfig.title}</title>
       </Head>
       <Nav />
-      <Main />
+      <Typist />
       <Footer />
     </>
   );
