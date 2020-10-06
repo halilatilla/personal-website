@@ -8,17 +8,20 @@ const Filter = ({ onChange, movies }) => {
   let uniqueRegions = [...new Set(regions)];
 
   return (
-    <select name="Select Movie Region" id="" onChange={onChange}>
-      <option value="">Select All</option>
-      {uniqueRegions &&
-        uniqueRegions.map((region) => {
-          return (
-            <option key={region} value={region}>
-              {region.toUpperCase()}
-            </option>
-          );
-        })}
-    </select>
+    <label>
+      Select A Movie Region :
+      <select onChange={onChange}>
+        <option value="">SELECT ALL</option>
+        {uniqueRegions &&
+          uniqueRegions.map((region) => {
+            return (
+              <option key={region} value={region}>
+                {region.toUpperCase()}
+              </option>
+            );
+          })}
+      </select>
+    </label>
   );
 };
 
