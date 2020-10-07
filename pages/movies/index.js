@@ -30,15 +30,18 @@ const MovieList = ({ allMovies }) => {
       <Head>
         <title>{SiteConfig.title} || Movies</title>
       </Head>
-      <Nav goHome={"Home"}></Nav>
-      <Filter movies={allMovies} onChange={(e) => setFiler(e)} />
+      <main>
+        <Nav goHome={"Home"}></Nav>
+        <h1>My Movies</h1>
+        <Filter movies={allMovies} onChange={(e) => setFiler(e)} />
 
-      <div className="p-movies-wrapper">
-        {movies &&
-          movies.map((movie) => {
-            return <MovieCard movie={movie} />;
-          })}
-      </div>
+        <div className="p-movies-wrapper">
+          {movies &&
+            movies.map((movie) => {
+              return <MovieCard movie={movie} key={movie._id} />;
+            })}
+        </div>
+      </main>
     </>
   );
 };

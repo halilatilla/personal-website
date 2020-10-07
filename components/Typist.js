@@ -12,7 +12,7 @@ const TypistContainer = () => {
 
   return (
     <>
-      <main className="typist-container" id="contentMain">
+      <main className="typist-container" id="contentMain" tabIndex="-1">
         <Typist startDelay={2000} cursor={{ element: "▍" }}>
           Hi 👋🏻
           <br />
@@ -20,7 +20,7 @@ const TypistContainer = () => {
           {welcome}
           <br />
           <Typist.Delay ms={500} />
-          <b>
+          <h1>
             I'm Halil Atilla 🧔🏻
             <br />
             <Typist.Delay ms={500} />
@@ -28,7 +28,7 @@ const TypistContainer = () => {
             <br />
             <Typist.Delay ms={500} />
             <span> Frontend Developer 💻</span>
-          </b>
+          </h1>
           <br />
         </Typist>
       </main>

@@ -10,7 +10,7 @@ const Filter = ({ onChange, movies }) => {
   return (
     <label>
       Select A Movie Region :
-      <select onChange={onChange}>
+      <select onChange={onChange} id="contentMain" autoComplete="off">
         <option value="">SELECT ALL</option>
         {uniqueRegions &&
           uniqueRegions.map((region) => {

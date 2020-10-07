@@ -2,7 +2,7 @@ import React from "react";
 
 function MovieCard({ movie }) {
   return (
-    <div className="movie-card" id="contentMain" key={movie._id}>
+    <div className="movie-card">
       <div>
         <p className="movie-name"> {movie.name}</p>
         <p className="movie-date">
