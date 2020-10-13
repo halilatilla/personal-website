@@ -16,15 +16,14 @@
 }
 
 .link {
-  color: #fff;
+  color: $c-white;
   font-size: 1rem;
   transition: all 0.3s ease;
   padding: 6px;
   border-radius: 3px;
 
   &:hover {
-    background-color: $c-main;
-    color: $c-primary;
+    color: white;
   }
 }
 

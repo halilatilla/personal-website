@@ -1,4 +1,5 @@
-@import "variables/index.scss";
+@import "normalize.scss";
+@import "variables";
 @import "global.scss";
-@import "components";
 @import "pages";
+@import "components";

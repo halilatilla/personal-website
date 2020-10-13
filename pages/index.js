@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import { Nav, Typist, Footer } from "../components";
+import { Nav, Main, Footer } from "../components";
 import SiteConfig from "../site.config";
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
         <title>{SiteConfig.title}</title>
       </Head>
       <Nav />
-      <Typist />
+      <Main />
       <Footer />
     </>
   );
