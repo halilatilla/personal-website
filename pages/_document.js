@@ -17,6 +17,25 @@ class MyDocument extends Document {
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta name="description" content={SiteConfig.description} />
 
+          <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/icons/apple-touch-icon.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/icons/favicon-32x32.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/icons/favicon-16x16.png"
+          />
+          <link rel="manifest" href="/icons/site.webmanifest" />
+
           {/* facebook */}
           <meta property="og:url" content={SiteConfig.siteUrl} />
           <meta property="og:type" content="website" />
@@ -38,15 +57,6 @@ class MyDocument extends Document {
           <meta
             name="apple-mobile-web-app-status-bar-style"
             content="default"
-          />
-          <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="/icons/apple-touch-icon.png"
-          />
-          <link
-            rel="icon"
-            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧔🏻</text></svg>"
           />
 
           {/* analytic */}
