@@ -1,6 +1,6 @@
 label {
   color: #fff;
-  font-size: 14px;
+  font-size: clamp(0.7rem, 3vw, 1.1rem);
 }
 
 select {

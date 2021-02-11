@@ -17,7 +17,7 @@
 
 .link {
   color: $c-white;
-  font-size: 1rem;
+  font-size: clamp(0.7rem, 3vw, 1.1rem);
   transition: all 0.3s ease;
   padding: 6px;
   border-radius: 3px;
