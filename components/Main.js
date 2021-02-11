@@ -9,7 +9,6 @@ const Main = () => {
         <div className="video__wrapper">
           <video
             name="Halil Atilla"
-            controls
             loop
             autoPlay={true}
             muted
