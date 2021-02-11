@@ -3,10 +3,24 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  height: 80vh;
+
+  h1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: clamp(2rem, 3vw, 5.1rem);
+  }
+
+  span {
+    font-size: clamp(1rem, 3vw, 2.1rem);
+    margin-bottom: 12px;
+  }
 
   &__hi {
     font-size: clamp(3rem, 3vw, 5.1rem);
-    line-height: 0;
+    margin: 0;
   }
 
   .video__wrapper {
@@ -21,19 +35,5 @@
       left: -100px;
       top: -135px;
     }
-  }
-
-  h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: clamp(2rem, 3vw, 5.1rem);
-  }
-
-  p {
-    //font-size: clamp(1rem, 3vw, 2.1rem);
-    opacity: 0.8;
-    margin: 20px;
   }
 }

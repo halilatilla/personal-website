@@ -17,8 +17,8 @@ const Main = () => {
           />
         </div>
       </h1>
-      <p> Just A Curious </p>
-      <p> Frontend Developer </p>
+      <span> Just A Curious </span>
+      <span> Frontend Developer </span>
     </main>
   );
 };
