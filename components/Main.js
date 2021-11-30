@@ -1,24 +1,31 @@
-import React from "react";
+import dynamic from "next/dynamic";
+
+const TextParticles = dynamic(() => import("react-text-particles"), {
+  ssr: false,
+});
 
 const Main = () => {
   return (
     <main className="main" id="contentMain">
-      <p className="main__hi">Hi 👋🏻</p>
       <h1>
-        I' am
-        <div className="video__wrapper">
-          <video
-            name="Halil Atilla"
-            loop
-            autoPlay={true}
-            muted
-            src="/logo.mp4"
-            type="video/mp4"
-          />
-        </div>
+        <TextParticles
+          flow={0.3}
+          text="Halil Atilla"
+          textSize={160}
+          canvas={{ width: 880, height: 300, bg: "#161c1e" }}
+          colorSet={["#f44336", "#e91e63", "#9c27b0", "#673ab7", "#3f51b5"]}
+        />
       </h1>
-      <span> Just A Curious </span>
-      <span> Frontend Developer </span>
+      <p>
+        U can creat that fancy stuff with my{" "}
+        <a
+          target="_blank"
+          href="https://www.npmjs.com/package/react-text-particles"
+        >
+          react-text-particles
+        </a>{" "}
+        npm package 😎
+      </p>
     </main>
   );
 };
