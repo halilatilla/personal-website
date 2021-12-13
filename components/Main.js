@@ -22,7 +22,7 @@ const Main = () => {
           target="_blank"
           href="https://www.npmjs.com/package/react-text-particles"
         >
-          react-text-particles
+          react-text-particles{" "}
         </a>
         npm package 😎
       </p>

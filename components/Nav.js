@@ -21,19 +21,9 @@ const Nav = ({ goHome }) => {
       <a className="skip-to-content-link" href="#contentMain">
         Skip to content
       </a>
-      {goHome ? (
+      {goHome && (
         <Link href="/">
           <a className="link"> {goHome} </a>
-        </Link>
-      ) : (
-        <Link href="/movies">
-          {loading ? (
-            <a className="link">Loading... </a>
-          ) : (
-            <a className="link" onClick={() => setLoading(true)}>
-              My Movies 🎬
-            </a>
-          )}
         </Link>
       )}
 
