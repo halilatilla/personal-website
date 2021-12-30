@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://halilatilla.com
+
+# Sitemaps
+Sitemap: https://halilatilla.com/sitemap.xml
