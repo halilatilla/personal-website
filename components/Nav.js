@@ -26,15 +26,7 @@ const Nav = ({ goHome }) => {
           <a className="link"> {goHome} </a>
         </Link>
       )}
-
-      <a
-        className="my-story link"
-        href="https://medium.com/@atillahalil0/son-heves-b%C3%BCk%C3%BCc%C3%BC-fab960fa69d9"
-        target="_blank"
-        rel="noreferrer"
-      >
-        My Story ✍️
-      </a>
+   
       <ul className="social-links-container">
         {SocialLinks.map(({ key, href, label }) => (
           <li className="social-links-item" key={key}>
