@@ -14,14 +14,15 @@ const Main = () => {
         <TextParticles />
       </h1>
       <p>
-        U can creat that fancy stuff with my{" "}
+        You can create visually appealing designs with ease using my npm
+        package,
         <a
           target="_blank"
           href="https://www.npmjs.com/package/react-text-particles"
         >
-          react-text-particles{" "}
+          {" "}
+          react-text-particles. 😎
         </a>
-        npm package 😎
       </p>
     </main>
   );
