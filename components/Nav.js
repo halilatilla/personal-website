@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Link from "next/link";
 
 const SocialLinks = [
@@ -14,8 +13,6 @@ const SocialLinks = [
 });
 
 const Nav = ({ goHome }) => {
-  const [loading, setLoading] = useState(false);
-
   return (
     <nav className="nav-container">
       <a className="skip-to-content-link" href="#contentMain">
@@ -26,7 +23,16 @@ const Nav = ({ goHome }) => {
           <a className="link"> {goHome} </a>
         </Link>
       )}
-   
+
+      <a
+        className="my-story link"
+        href="https://medium.com/@atillahalil0"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Medium ✍️
+      </a>
+
       <ul className="social-links-container">
         {SocialLinks.map(({ key, href, label }) => (
           <li className="social-links-item" key={key}>
