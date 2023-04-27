@@ -1,6 +1,5 @@
-import React from "react";
 import Head from "next/head";
-import { Nav, Main, Footer } from "../components";
+import { Nav, Main } from "../components";
 import SiteConfig from "../site.config";
 
 const Home = () => {
@@ -11,7 +10,6 @@ const Home = () => {
       </Head>
       <Nav />
       <Main />
-      <Footer />
     </>
   );
 };
