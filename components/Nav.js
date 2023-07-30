@@ -1,8 +1,7 @@
 const SocialLinks = [
-  { href: "https://twitter.com/HalilAtilla10", label: "Twitter" },
   { href: "https://github.com/halilatilla", label: "GitHub" },
   {
-    href: "https://www.linkedin.com/in/halil-atilla-838129151/",
+    href: "https://www.linkedin.com/in/halilatilla",
     label: "Linkedin",
   },
 ].map((link) => {
@@ -16,7 +15,7 @@ const Nav = () => {
       <div className="flex-1">
         <a
           className="btn btn-ghost normal-case text-xl"
-          href="https://medium.com/@atillahalil0"
+          href="https://medium.com/@halilatilla"
           target="_blank"
           rel="noreferrer"
         >
