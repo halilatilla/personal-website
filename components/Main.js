@@ -17,8 +17,7 @@ const Main = () => {
               <TextParticles />
             </h1>
             <p className="py-6">
-              You can create visually appealing designs with ease using my npm
-              package.
+              You can create text particles with ease using my npm package.
             </p>
             <a
               target="_blank"
