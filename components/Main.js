@@ -17,7 +17,7 @@ const Main = () => {
               <TextParticles />
             </h1>
             <p className="py-6">
-              You can create text particles with ease using my npm package.
+              Creating text particles is effortless when you use my NPM package.
             </p>
             <a
               target="_blank"
